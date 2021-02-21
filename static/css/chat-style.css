@@ -1,0 +1,78 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
+*{
+    margin:0;
+    box-sizing: border-box;
+}
+body{
+    background-color: #323232;
+}
+h1{
+    text-align: center;
+    color: darkgrey;
+    font-size: 60px;
+    font-weight: 500;
+    font-family: Lato;
+    padding-top: 30px;
+}
+h2{
+    text-align: center;
+    color: darkgrey;
+    font-size: 40px;
+    font-weight: 500;
+    font-family: Lato;
+    padding: 20px 0;
+}
+.chat-window{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+textarea{
+    width: 80%;
+    height: 300px;
+    margin: 0 auto;
+    resize: none;
+    overflow-y: auto;
+    background-color: darkgrey;
+    outline: none;
+    border-radius: 10px;
+    padding: 4px;
+    margin-bottom: 15px;
+}
+input{
+    width: 80%;
+    margin: 0 auto;
+    height: 30px;
+    background-color: darkgrey;
+    border: 2px solid #323232;
+    border-radius:5px;
+    font-size: 15px;
+    
+    color:#363636;
+    outline: none;
+}
+
+#chat{
+    font-size: larger;
+    font-weight: 600;
+}
+#send , .leave-btn{
+    margin: 20px 30px;
+    width: 250px;
+    height: 50px;
+    border: 2px solid #323232;
+    background-color:#363636;
+    color: darkgrey;
+    font-size: 30px;
+    border-radius:5px;
+}
+#send:focus , #send:hover , .leave-btn:hover , .leave-btn:focus{
+    border: 2px solid #323232;
+    outline: none;
+    background-color: darkgrey;
+    color:#363636;
+}
+.flex{
+    display: flex;
+    justify-content: center;
+}

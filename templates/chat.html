@@ -4,8 +4,8 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../static/css/chat-style.css">
     <script src="//cdnjs.cloudflare.com/ajax/libs/socket.io/3.1.1/socket.io.js"></script>
-    <script type="text/javascript" src="//code.jquery.com/jquery-1.4.2.min.js"></script>
     <script type="text/javascript" charset="utf-8">
         var socket;
         document.addEventListener("DOMContentLoaded", () => {
@@ -48,11 +48,12 @@
 <div class="chat-window">
     <h1> Chat Room</h1>
     <h2>Room : {{ session['room'] }}</h2>
-    <textarea id="chat" cols="70" rows="10" placeholder="No messages yet" readonly></textarea><br/><br/>
+    <textarea id="chat" cols="70" rows="10" placeholder="No messages yet" readonly></textarea>
     <input type="text" id="text" size="60" placeholder="Enter your message here"/>
-    <button type="button" id="send">SEND</button>
-    <br/><br/>
-    <button type="button" onclick=leave_room()>Leave this Chat</button>
+    <div class="flex">
+        <button type="button" id="send">Send</button>
+        <button type="button" class="leave-btn" onclick=leave_room()>Leave this Chat</button>
+    </div>
 </div>
 
 </body>
